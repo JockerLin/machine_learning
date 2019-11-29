@@ -21,7 +21,7 @@ from tensorflow.python.keras.applications import resnet, vgg16, vgg19, imagenet_
 from tensorflow.python.keras import layers, datasets, models, regularizers
 
 
-"基于imagenet训练好的模型进行cifar10分类"
+"基于imagenet训练好的VGG16模型进行cifar10分类"
 "学习在训练好的模型上finetune"
 
 
@@ -126,12 +126,12 @@ class DataSource(object):
         print("Loading Data Finish......")
 
 
-def train(batchSize=64, epoch=100):
+def train(batchSize=32, epoch=100):
     model = TransferLearningVGGModel()
     data = DataSource()
 
     model.compile(loss='categorical_crossentropy',
-                  optimizer=keras.optimizers.Adadelta(learning_rate=0.001),
+                  optimizer=keras.optimizers.Adadelta(learning_rate=0.05),
                   metrics=['accuracy'])
 
     save_model_cb = keras.callbacks.ModelCheckpoint('ckpt/CIFAR10-EP{epoch:02d}.h5',

@@ -239,11 +239,12 @@ def train(model, batchSize=128, epoch=250, data=None):
 
         # verbose = 0 为不在标准输出流输出日志信息
         # verbose = 1 为输出进度条记录
-        save_model_cb = keras.callbacks.ModelCheckpoint('ckpt/CIFAR10-EP{epoch:02d}.h5',
+        current_time = datetime.datetime.now().strftime('%Y%m%d_%H%M')
+        save_model_cb = keras.callbacks.ModelCheckpoint('ckpt/' + str(current_time) + 'CIFAR10-EP{epoch:02d}.h5',
                                                         monitor='val_accuracy',
                                                         save_weights_only=True,
                                                         verbose=1,
-                                                        period=10)
+                                                        period=1)
         tensor_board = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       histogram_freq=0)
 
@@ -280,9 +281,9 @@ def train(model, batchSize=128, epoch=250, data=None):
     print("准确率: %.6f，共测试了 EP #%d 张图片 " % (test_acc, len(data.test_labels)))
 
 
-def restorModel(weightPath="./ckpt/model_20191126_1659\CIFAR10-EP250.h5",
+def restorModel(weightPath="./ckpt/CIFAR10-EP06.h5",
                 data=DataSource(),
-                model=VGGModel()):
+                model=TransferLearningVGGModel()):
     """
     模型恢复
 
@@ -306,12 +307,12 @@ def restorModel(weightPath="./ckpt/model_20191126_1659\CIFAR10-EP250.h5",
         model.load_weights(weightPath)  # 仅仅恢复权重
 
         cv2.namedWindow("img", cv2.WINDOW_NORMAL)
-        cv2.imshow("img", np.hstack(data.test_images[5:10]))
-        index = model.predict(np.array(data.test_images[5:10]))
+        cv2.imshow("img", np.hstack(data.test_images[:10]))
+        index = model.predict(np.array(data.test_images[:10]))
         # print("index:", type(index))
         pre_type = [CLASS_TYPE[np.argmax(x)] for x in index]
         print("pre_type:", pre_type)
-        # cv2.waitKey()
+        cv2.waitKey()
 
 
 if __name__ == "__main__":
@@ -320,7 +321,8 @@ if __name__ == "__main__":
     #     os.environ["CUDA_VISIBLE_DEVICES"] = tf.test.gpu_device_name()
 
     model = TransferLearningVGGModel()
+    model.load_weights("./ckpt/CIFAR10-EP06.h5")
     data_sources = DataSource()
-    history = train(model=model, data=data_sources, batchSize=64)
+    history = train(model=model, data=data_sources, batchSize=32)
     # restorModel()
 
