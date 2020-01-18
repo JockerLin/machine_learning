@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1679ed6d-b08e-4786-8d5a-e43318d281c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pytorch/generatest/contiguous.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytorch/generatest/dog.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirement.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensorflow/hog/hog_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensorflow/hog/messi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytorch/visdom/visdomtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/rcnn/selectsearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/rcnn/selectsearch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/rcnn/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow/rcnn/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.34359297">
+    <splitter split-orientation="horizontal" split-proportion="0.5414573">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="selectsearch.py" pinned="false" current-in-tab="false">
@@ -38,8 +31,8 @@
           <file leaf-file-name="hog_test.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tensorflow/hog/hog_test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="99" column="13" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
+                <state relative-caret-position="162">
+                  <caret line="83" column="14" lean-forward="true" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -86,11 +79,32 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="contiguous.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="contiguous.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pytorch/generatest/contiguous.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+                <state relative-caret-position="522">
+                  <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+                  <folding>
+                    <element signature="e#169#181#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="requirement.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/requirement.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1237">
+                  <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="visdomtest.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pytorch/visdom/visdomtest.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="284">
+                  <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
                   <folding>
                     <element signature="e#169#181#0" expanded="true" />
                   </folding>
@@ -170,14 +184,15 @@
         <option value="$PROJECT_DIR$/tensorflow/hog/hog_test.py" />
         <option value="$PROJECT_DIR$/tensorflow/transferlearning_tf2/train.py" />
         <option value="$PROJECT_DIR$/pytorch/generatest/contiguous.py" />
+        <option value="$PROJECT_DIR$/pytorch/visdom/visdomtest.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1967" />
-    <option name="y" value="-6" />
-    <option name="width" value="1873" />
-    <option name="height" value="1086" />
+    <option name="x" value="1990" />
+    <option name="y" value="109" />
+    <option name="width" value="1871" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -201,6 +216,12 @@
               <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
               <item name="pytorch" type="462c0819:PsiDirectoryNode" />
               <item name="generatest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="pytorch" type="462c0819:PsiDirectoryNode" />
+              <item name="visdom" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="machine_learning" type="b2602c69:ProjectViewProjectNode" />
@@ -240,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.contiguous">
+  <component name="RunManager" selected="Python.visdomtest">
     <configuration name="contiguous" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machine_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -313,14 +334,34 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="visdomtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machine_learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch/visdom" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/visdom/visdomtest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.train" />
       <item itemvalue="Python.selectsearch" />
       <item itemvalue="Python.hog_test" />
       <item itemvalue="Python.contiguous" />
+      <item itemvalue="Python.visdomtest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.visdomtest" />
         <item itemvalue="Python.contiguous" />
         <item itemvalue="Python.hog_test" />
         <item itemvalue="Python.selectsearch" />
@@ -345,14 +386,14 @@
     <frame x="1967" y="-6" width="1873" height="1086" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13945946" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16540541" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32112068" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32112068" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17456897" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.30818966" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3599138" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -518,13 +559,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.virtualenvs/ai/lib/python3.6/site-packages/skimage/segmentation/_felzenszwalb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-1070906930/skimage/segmentation/_felzenszwalb_cy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -826,13 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirement.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1019">
-          <caret line="109" column="11" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow/rcnn/selectsearch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
@@ -840,13 +867,6 @@
           <folding>
             <element signature="e#170#180#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow/hog/hog_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="99" column="13" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -891,11 +911,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pytorch/generatest/contiguous.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+        <state relative-caret-position="522">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#169#181#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirement.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1237">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytorch/visdom/visdomtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#169#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow/hog/hog_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="83" column="14" lean-forward="true" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
         </state>
       </provider>
     </entry>
