@@ -17,6 +17,7 @@ show = ToPILImage() # 可以把Tensor转成Image，方便可视化
 from torch import optim
 
 module_name = 'cifar_10_model.pkl'
+# module_name = 'cifar_10_model_cuda.pkl'
 
 # 定义对数据的预处理
 transform = transforms.Compose([
@@ -35,7 +36,7 @@ testloader = t.utils.data.DataLoader(
                     testset,
                     batch_size=4,
                     shuffle=False,
-                    num_workers=2)
+                    num_workers=0)
 
 classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 
@@ -63,7 +64,8 @@ if __name__ == "__main__":
     print('begin restore')
     net = Net()
     device = t.device("cuda:0" if t.cuda.is_available() else "cpu")
-    net.cuda()
+    # net.cuda()
+    net.cpu()
     net.to(device)
     # 模型数据恢复
     net.load_state_dict(t.load(module_name))

@@ -21,7 +21,7 @@ from torch import optim
 # 如果已经下载有CIFAR-10，可通过root参数指定
 
 module_name = 'cifar_10_model.pkl'
-data_path = "./data"
+data_path = "data"
 
 # 定义对数据的预处理
 transform = transforms.Compose([
@@ -38,11 +38,13 @@ trainset = tv.datasets.CIFAR10(
     transform=transform,
 )
 
+# window下DataLoader的num_workers改为0，否则报错BrokenPipeError: [Errno 32] Broken pipe 多线程的问题
+
 trainloader = t.utils.data.DataLoader(
                     trainset,
                     batch_size=4,
                     shuffle=True,
-                    num_workers=2)
+                    num_workers=0)
 
 # 测试集
 testset = tv.datasets.CIFAR10(
@@ -55,7 +57,7 @@ testloader = t.utils.data.DataLoader(
                     testset,
                     batch_size=4,
                     shuffle=False,
-                    num_workers=2)
+                    num_workers=0)
 
 classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 print("train data is {}, test set is {}".format(len(trainloader), len(testloader)))
@@ -109,7 +111,8 @@ print("cuda use:", t.cuda.is_available())
 device = t.device("cuda:0" if t.cuda.is_available() else "cpu")
 # 设置默认的数据类型
 # t.set_default_tensor_type('torch.cuda.FloatTensor')
-net.cuda()
+# net.cuda()
+net.cpu()
 net.to(device)
 # images.to(device)
 # labels.to(device)

@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1679ed6d-b08e-4786-8d5a-e43318d281c4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/cifar10/cifar_10.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/cifar10/cifar_10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/cifar10/cifar_10_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/cifar10/cifar_10_model_cuda.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/cifar10/cifar_10_restore.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/cifar10/cifar_10_restore.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,25 +37,18 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>batchSize</find>
-      <find>_generate_segments</find>
-      <find>mpatches</find>
-      <find>tra</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XxfPv0uapvhDfYmQSeUgjwwrZc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PIproject/mtn" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -43,8 +57,8 @@
       <recent name="$PROJECT_DIR$/tensorflow/hog" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.cifar_10">
-    <configuration name="cifar_10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.visdomtest">
+    <configuration name="cifar_10_restore" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,7 +70,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/cifar10/cifar_10.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/cifar10/cifar_10_restore.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hog_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="linear_regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,11 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow/hog" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch/linearregression" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow/hog/hog_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/linearregression/linear_regression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="selectsearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="resnet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,11 +129,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow/rcnn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch/resnet" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow/rcnn/selectsearch.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/resnet/resnet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,7 +142,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="visdomtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="visdomtest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,33 +164,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.selectsearch" />
-      <item itemvalue="Python.hog_test" />
       <item itemvalue="Python.contiguous" />
+      <item itemvalue="Python.cifar_10_restore" />
+      <item itemvalue="Python.linear_regression" />
+      <item itemvalue="Python.resnet" />
       <item itemvalue="Python.visdomtest" />
-      <item itemvalue="Python.cifar_10" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cifar_10" />
         <item itemvalue="Python.visdomtest" />
+        <item itemvalue="Python.resnet" />
+        <item itemvalue="Python.linear_regression" />
         <item itemvalue="Python.contiguous" />
-        <item itemvalue="Python.hog_test" />
-        <item itemvalue="Python.selectsearch" />
+        <item itemvalue="Python.cifar_10_restore" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -191,31 +193,58 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="770" y="295" key="FileChooserDialogImpl" timestamp="1581996348406">
-      <screen x="45" y="24" width="1875" height="1056" />
+    <state x="1101" y="438" key="FileChooserDialogImpl" timestamp="1602725924628">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="770" y="295" key="FileChooserDialogImpl/45.24.1875.1056/1920.0.1920.1080@45.24.1875.1056" timestamp="1581996348406" />
-    <state width="1852" height="287" key="GridCell.Tab.0.bottom" timestamp="1582175729802">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="1101" y="438" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602725924628" />
+    <state width="1546" height="357" key="GridCell.Tab.0.bottom" timestamp="1602728364512">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="287" key="GridCell.Tab.0.bottom/45.24.1875.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582175729802" />
-    <state width="1852" height="287" key="GridCell.Tab.0.bottom/45.24.1875.1056/1920.0.1920.1080@45.24.1875.1056" timestamp="1582003695804" />
-    <state width="1852" height="287" key="GridCell.Tab.0.center" timestamp="1582175729801">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1546" height="357" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602728364512" />
+    <state width="1546" height="357" key="GridCell.Tab.0.center" timestamp="1602728364512">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="287" key="GridCell.Tab.0.center/45.24.1875.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582175729801" />
-    <state width="1852" height="287" key="GridCell.Tab.0.center/45.24.1875.1056/1920.0.1920.1080@45.24.1875.1056" timestamp="1582003695804" />
-    <state width="1852" height="287" key="GridCell.Tab.0.left" timestamp="1582175729801">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1546" height="357" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602728364512" />
+    <state width="1546" height="357" key="GridCell.Tab.0.left" timestamp="1602728364512">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="287" key="GridCell.Tab.0.left/45.24.1875.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582175729801" />
-    <state width="1852" height="287" key="GridCell.Tab.0.left/45.24.1875.1056/1920.0.1920.1080@45.24.1875.1056" timestamp="1582003695804" />
-    <state width="1852" height="287" key="GridCell.Tab.0.right" timestamp="1582175729801">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1546" height="357" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602728364512" />
+    <state width="1546" height="357" key="GridCell.Tab.0.right" timestamp="1602728364512">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1852" height="287" key="GridCell.Tab.0.right/45.24.1875.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582175729801" />
-    <state width="1852" height="287" key="GridCell.Tab.0.right/45.24.1875.1056/1920.0.1920.1080@45.24.1875.1056" timestamp="1582003695804" />
+    <state width="1546" height="357" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602728364512" />
+    <state width="1546" height="346" key="GridCell.Tab.1.bottom" timestamp="1602728084467">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1546" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602728084467" />
+    <state width="1546" height="346" key="GridCell.Tab.1.center" timestamp="1602728084466">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1546" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602728084466" />
+    <state width="1546" height="346" key="GridCell.Tab.1.left" timestamp="1602728084466">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1546" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602728084466" />
+    <state width="1546" height="346" key="GridCell.Tab.1.right" timestamp="1602728084467">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1546" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602728084467" />
+    <state x="299" y="207" key="SettingsEditor" timestamp="1602725939049">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="299" y="207" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602725939049" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -248,6 +277,16 @@
           <url>file://$PROJECT_DIR$/pytorch/generatest/contiguous.py</url>
           <line>30</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytorch/visdom/visdomtest.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytorch/cifar10/cifar_10.py</url>
+          <line>122</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
