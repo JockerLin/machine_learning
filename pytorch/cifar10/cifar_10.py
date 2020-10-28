@@ -118,9 +118,10 @@ net.to(device)
 # labels.to(device)
 
 t.set_num_threads(8)
+training_times = 20
 # 设置PyTorch进行CPU多线程并行计算时候所占用的线程数，这个可以用来限制PyTorch所占用的CPU数目
 print("\nbegin train")
-for epoch in range(10):
+for epoch in range(training_times):
     print("epoch step is :", epoch)
     # 轮5遍训练集
     running_loss = 0.0

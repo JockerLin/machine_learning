@@ -73,13 +73,13 @@ if __name__ == "__main__":
     dataiter = iter(testloader)
     for index, data in enumerate(dataiter):
         image, label = data
-        print("image:", image)
-        print("label:", label)
-        if index == 12:
+        # print("image:", image)
+        # print("label:", label)
+        if index == 4:
             break
-    images, labels = dataiter.next() # 一个batch返回4张图片
+    images, labels = dataiter.next()  # 一个batch返回4张图片
     print('实际的label: ', ' '.join('%08s'%classes[labels[j]] for j in range(4)))
-    show(tv.utils.make_grid(images / 2 - 0.5)).resize((400, 100)).show()
+    # show(tv.utils.make_grid(images / 2 - 0.5)).resize((400, 100)).show()
 
     # 计算图片在每个类别上的分数
     images = images.to(device)
@@ -90,8 +90,8 @@ if __name__ == "__main__":
 
     print('预测结果: ', ' '.join('%5s'% classes[predicted[j]] for j in range(4)))
 
-    correct = 0 # 预测正确的图片数
-    total = 0 # 总共的图片数
+    correct = 0  # 预测正确的图片数
+    total = 0  # 总共的图片数
 
     # 由于测试的时候不需要求导，可以暂时关闭autograd，提高速度，节约内存
     with t.no_grad():

@@ -13,7 +13,7 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select />
@@ -22,7 +22,7 @@
     <list default="true" id="1679ed6d-b08e-4786-8d5a-e43318d281c4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pytorch/cifar10/cifar_10.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/cifar10/cifar_10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/cifar10/cifar_10_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/cifar10/cifar_10_model_cuda.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/cifar10/cifar_10_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/cifar10/cifar_10_model.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pytorch/cifar10/cifar_10_restore.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/cifar10/cifar_10_restore.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../labelme" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -57,7 +57,28 @@
       <recent name="$PROJECT_DIR$/tensorflow/hog" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.visdomtest">
+  <component name="RunManager" selected="Python.regression">
+    <configuration name="cifar_10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="machine_learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch/cifar10" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/cifar10/cifar_10.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="cifar_10_restore" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="contiguous" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,32 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch/generatest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/generatest/contiguous.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="linear_regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="machine_learning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch/linearregression" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/linearregression/linear_regression.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/regression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,19 +164,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.contiguous" />
-      <item itemvalue="Python.cifar_10_restore" />
-      <item itemvalue="Python.linear_regression" />
       <item itemvalue="Python.resnet" />
       <item itemvalue="Python.visdomtest" />
+      <item itemvalue="Python.cifar_10" />
+      <item itemvalue="Python.cifar_10_restore" />
+      <item itemvalue="Python.regression" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.regression" />
+        <item itemvalue="Python.cifar_10_restore" />
+        <item itemvalue="Python.cifar_10" />
         <item itemvalue="Python.visdomtest" />
         <item itemvalue="Python.resnet" />
-        <item itemvalue="Python.linear_regression" />
-        <item itemvalue="Python.contiguous" />
-        <item itemvalue="Python.cifar_10_restore" />
       </list>
     </recent_temporary>
   </component>
@@ -205,42 +205,46 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1101" y="438" key="FileChooserDialogImpl" timestamp="1602725924628">
+    <state width="1079" height="466" key="DebuggerActiveHint" timestamp="1602819189355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1101" y="438" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602725924628" />
-    <state width="1546" height="357" key="GridCell.Tab.0.bottom" timestamp="1602728364512">
+    <state width="1079" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1602819189355" />
+    <state x="1043" y="373" key="FileChooserDialogImpl" timestamp="1602838120745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1546" height="357" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602728364512" />
-    <state width="1546" height="357" key="GridCell.Tab.0.center" timestamp="1602728364512">
+    <state x="1043" y="373" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602838120745" />
+    <state width="1546" height="215" key="GridCell.Tab.0.bottom" timestamp="1602838129601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1546" height="357" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602728364512" />
-    <state width="1546" height="357" key="GridCell.Tab.0.left" timestamp="1602728364512">
+    <state width="1546" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602838129601" />
+    <state width="1546" height="215" key="GridCell.Tab.0.center" timestamp="1602838129601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1546" height="357" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602728364512" />
-    <state width="1546" height="357" key="GridCell.Tab.0.right" timestamp="1602728364512">
+    <state width="1546" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602838129601" />
+    <state width="1546" height="215" key="GridCell.Tab.0.left" timestamp="1602838129600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1546" height="357" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602728364512" />
-    <state width="1546" height="346" key="GridCell.Tab.1.bottom" timestamp="1602728084467">
+    <state width="1546" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602838129600" />
+    <state width="1546" height="215" key="GridCell.Tab.0.right" timestamp="1602838129601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1546" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602728084467" />
-    <state width="1546" height="346" key="GridCell.Tab.1.center" timestamp="1602728084466">
+    <state width="1546" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602838129601" />
+    <state width="1546" height="215" key="GridCell.Tab.1.bottom" timestamp="1602838129601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1546" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602728084466" />
-    <state width="1546" height="346" key="GridCell.Tab.1.left" timestamp="1602728084466">
+    <state width="1546" height="215" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602838129601" />
+    <state width="1546" height="215" key="GridCell.Tab.1.center" timestamp="1602838129601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1546" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602728084466" />
-    <state width="1546" height="346" key="GridCell.Tab.1.right" timestamp="1602728084467">
+    <state width="1546" height="215" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602838129601" />
+    <state width="1546" height="215" key="GridCell.Tab.1.left" timestamp="1602838129601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1546" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602728084467" />
+    <state width="1546" height="215" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602838129601" />
+    <state width="1546" height="215" key="GridCell.Tab.1.right" timestamp="1602838129601">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1546" height="215" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602838129601" />
     <state x="299" y="207" key="SettingsEditor" timestamp="1602725939049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -285,8 +289,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pytorch/cifar10/cifar_10.py</url>
-          <line>122</line>
+          <line>123</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytorch/regression.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytorch/regression.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
