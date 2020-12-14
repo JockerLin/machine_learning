@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 __author__ = 'Lin CunQin'
 __version__ = '1.0'
-__date__ = '2019.10.16'
+__date__ = '2020'
 __copyright__ = 'Copyright 2019, PI'
 
 
@@ -29,6 +29,7 @@ transform = transforms.Compose([
     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),# 归一化
 ])
 
+batch_size = 4
 
 # 训练集
 trainset = tv.datasets.CIFAR10(
@@ -42,7 +43,7 @@ trainset = tv.datasets.CIFAR10(
 
 trainloader = t.utils.data.DataLoader(
                     trainset,
-                    batch_size=4,
+                    batch_size=batch_size,
                     shuffle=True,
                     num_workers=0)
 
@@ -55,7 +56,7 @@ testset = tv.datasets.CIFAR10(
 
 testloader = t.utils.data.DataLoader(
                     testset,
-                    batch_size=4,
+                    batch_size=batch_size,
                     shuffle=False,
                     num_workers=0)
 
@@ -71,7 +72,7 @@ show((data + 1) / 2).resize((100, 100))
 
 dataiter = iter(trainloader)
 images, labels = dataiter.next() # 返回4张图片及标签
-print(' '.join('%11s'%classes[labels[j]] for j in range(4)))
+print(' '.join('%11s'%classes[labels[j]] for j in range(batch_size)))
 show(tv.utils.make_grid((images+1)/2)).resize((400, 100))
 
 
@@ -118,7 +119,7 @@ net.to(device)
 # labels.to(device)
 
 t.set_num_threads(8)
-training_times = 20
+training_times = 10
 # 设置PyTorch进行CPU多线程并行计算时候所占用的线程数，这个可以用来限制PyTorch所占用的CPU数目
 print("\nbegin train")
 for epoch in range(training_times):
@@ -157,7 +158,7 @@ t.save(net.state_dict(), module_name)
 
 dataiter = iter(testloader)
 images, labels = dataiter.next() # 一个batch返回4张图片
-print('实际的label: ', ' '.join('%08s'%classes[labels[j]] for j in range(4)))
+print('实际的label: ', ' '.join('%08s'%classes[labels[j]] for j in range(batch_size)))
 show(tv.utils.make_grid(images / 2 - 0.5)).resize((400,100)).show()
 
 # 计算图片在每个类别上的分数
@@ -166,7 +167,7 @@ outputs = net(images)
 # 得分最高的那个类
 _, predicted = t.max(outputs.data, 1)
 
-print('预测结果: ', ' '.join('%5s'% classes[predicted[j]] for j in range(4)))
+print('预测结果: ', ' '.join('%5s'% classes[predicted[j]] for j in range(batch_size)))
 
 correct = 0 # 预测正确的图片数
 total = 0 # 总共的图片数

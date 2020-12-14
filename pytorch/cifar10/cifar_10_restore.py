@@ -25,6 +25,8 @@ transform = transforms.Compose([
     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),# 归一化
 ])
 
+batch_size = 8
+
 # 测试集
 testset = tv.datasets.CIFAR10(
                     './data',
@@ -34,7 +36,7 @@ testset = tv.datasets.CIFAR10(
 
 testloader = t.utils.data.DataLoader(
                     testset,
-                    batch_size=4,
+                    batch_size=batch_size,
                     shuffle=False,
                     num_workers=0)
 
@@ -75,10 +77,10 @@ if __name__ == "__main__":
         image, label = data
         # print("image:", image)
         # print("label:", label)
-        if index == 4:
+        if index == batch_size:
             break
     images, labels = dataiter.next()  # 一个batch返回4张图片
-    print('实际的label: ', ' '.join('%08s'%classes[labels[j]] for j in range(4)))
+    print('实际的label: ', ' '.join('%08s'%classes[labels[j]] for j in range(batch_size)))
     # show(tv.utils.make_grid(images / 2 - 0.5)).resize((400, 100)).show()
 
     # 计算图片在每个类别上的分数
@@ -88,7 +90,7 @@ if __name__ == "__main__":
     # 得分最高的那个类
     _, predicted = t.max(outputs.data, 1)
 
-    print('预测结果: ', ' '.join('%5s'% classes[predicted[j]] for j in range(4)))
+    print('预测结果: ', ' '.join('%5s'% classes[predicted[j]] for j in range(batch_size)))
 
     correct = 0  # 预测正确的图片数
     total = 0  # 总共的图片数

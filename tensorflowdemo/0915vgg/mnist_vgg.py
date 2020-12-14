@@ -27,8 +27,7 @@ h_conv3 = tf.nn.relu(tf.nn.conv2d(h_pool2, W_conv3,strides=[1, 1, 1, 1], padding
 W_conv4 = tf.Variable(tf.truncated_normal([3, 3, 128, 128],stddev=0.1))
 b_conv4 = tf.Variable(tf.constant(0.1,shape=[128]))
 h_conv4 = tf.nn.relu(tf.nn.conv2d(h_conv3, W_conv4,strides=[1, 1, 1, 1], padding='SAME') + b_conv4)
-h_pool4= tf.nn.max_pool(h_conv4, ksize=[1, 2, 2, 1],
-                        strides=[1, 2, 2, 1], padding='SAME')
+h_pool4= tf.nn.max_pool(h_conv4, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 #Layer5
 W_conv5 = tf.Variable(tf.truncated_normal([3, 3, 128, 256],stddev=0.1))
 b_conv5 = tf.Variable(tf.constant(0.1,shape=[256]))
@@ -45,8 +44,7 @@ h_conv7 = tf.nn.relu(tf.nn.conv2d(h_conv6, W_conv7,strides=[1, 1, 1, 1], padding
 W_conv8 = tf.Variable(tf.truncated_normal([3, 3, 256, 256],stddev=0.1))
 b_conv8 = tf.Variable(tf.constant(0.1,shape=[256]))
 h_conv8 = tf.nn.relu(tf.nn.conv2d(h_conv7, W_conv8,strides=[1, 1, 1, 1], padding='SAME') + b_conv8)
-h_pool8 = tf.nn.max_pool(h_conv8, ksize=[1, 2, 2, 1],
-                        strides=[1, 1, 1, 1], padding='SAME')
+h_pool8 = tf.nn.max_pool(h_conv8, ksize=[1, 2, 2, 1], strides=[1, 1, 1, 1], padding='SAME')
 #Layer9-全连接层
 W_fc1 = tf.Variable(tf.truncated_normal([7*7*256,1024],stddev=0.1))
 b_fc1 = tf.Variable(tf.constant(0.1,shape=[1024]))
@@ -90,4 +88,3 @@ save_path = saver.save(sess, "./model/save_net.ckpt")
 
 print("test accuracy %g"%accuracy.eval(feed_dict={
     x: mnist.test.images[:3000], y_: mnist.test.labels[:3000], keep_prob: 1.0}))
-

@@ -1,0 +1,10 @@
+dataclasses==0.8
+future==0.18.2
+numpy==1.19.1
+opencv-python==3.4.0.12
+Pillow==8.0.1
+PyYAML==5.3.1
+torch==1.7.0+cpu
+torchaudio==0.7.0
+torchvision==0.8.1+cpu
+typing-extensions==3.7.4.3
