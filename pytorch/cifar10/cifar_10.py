@@ -29,7 +29,7 @@ transform = transforms.Compose([
     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),# 归一化
 ])
 
-batch_size = 4
+batch_size = 100
 
 # 训练集
 trainset = tv.datasets.CIFAR10(

@@ -6,6 +6,8 @@ __pycache__/
 
 # dataset or model
 pytorch/cifar10/data/
+pytorch/mnistdetect/mnist_data/
+pytorch/mnistdetect/checkpoint/
 tensorflow/0915vgg/MNIST_data/
 tensorflow/mnist_tf2/ckpt/
 tensorflow/mnist_tf2/data_set_tf2/
