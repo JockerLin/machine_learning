@@ -29,7 +29,7 @@ transform = transforms.Compose([
     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),# 归一化
 ])
 
-batch_size = 100
+batch_size = 10000
 
 # 训练集
 trainset = tv.datasets.CIFAR10(
@@ -112,13 +112,13 @@ print("cuda use:", t.cuda.is_available())
 device = t.device("cuda:0" if t.cuda.is_available() else "cpu")
 # 设置默认的数据类型
 # t.set_default_tensor_type('torch.cuda.FloatTensor')
-# net.cuda()
-net.cpu()
+net.cuda()
+# net.cpu()
 net.to(device)
-# images.to(device)
-# labels.to(device)
+images.to(device)
+labels.to(device)
 
-t.set_num_threads(8)
+# t.set_num_threads(8)
 training_times = 10
 # 设置PyTorch进行CPU多线程并行计算时候所占用的线程数，这个可以用来限制PyTorch所占用的CPU数目
 print("\nbegin train")

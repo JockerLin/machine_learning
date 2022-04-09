@@ -38,6 +38,9 @@ print(x.shape,y.shape,x.min(),x.max())
 #   plt.yticks([])
 # plt.show()
 
+
+
+
 relu = nn.ReLU()  # 如果使用torch.sigmoid作为激活函数的话正确率只有60%
 # 创建网络
 
@@ -77,6 +80,13 @@ optimizer = optim.SGD(net.parameters(), lr=0.01, momentum=0.9)
 train_loss = []
 mes_loss = nn.MSELoss()
 
+if torch.cuda.is_available():
+    device = torch.device("cuda")
+    x = x.to(device)
+    y = y.to(device)
+    net = net.to(device)
+
+
 def valTest():
     ## 准确度测试
     total_correct = 0
@@ -93,7 +103,7 @@ def valTest():
 
 
 def training():
-    for epoch in range(10):
+    for epoch in range(20):
         for batch_idx, (x, y) in enumerate(train_loader):
             # x:[b,1,28,28],y:[512]
             # [b,1,28,28]  =>  [b,784]
@@ -217,10 +227,10 @@ def visionUse():
     #   plt.yticks([])
     # plt.show()
 
-# training()
+training()
 # FolderImages()
 # checkpoint = torch.load('./checkpoint/2020-12-17-11-38-48-ckpt.pth')  # 加载模型
 # net.load_state_dict(checkpoint)
 # valTest()
-visionUse()
+#visionUse()
 
